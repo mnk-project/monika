@@ -1,6 +1,7 @@
-pandas == 1.0.4
-numpy == 1.18.4
-nltk == 3.5
-tensorflow = 2.0
-joblib == 0.15.1
-streamlit == 0.62.0
+pandas==1.0.4
+matplotlib==3.3.0
+numpy==1.19.1
+nltk==3.5
+tensorflow==2.0
+joblib==0.15.1
+streamlit==0.62.0
