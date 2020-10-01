@@ -15,10 +15,10 @@ ARTIFACTS_PATH = path.joinpath(path.cwd(),'model_artifacts')
 DATASETS_PATH = path.joinpath(path.cwd(),'dataset')
 
 # Load artifacts
-model = load_model(Path.joinpath(artifacts_path,'model-v1.h5'))
-tokenizer_t = joblib.load(Path.joinpath(artifacts_path,'tokenizer_t.pkl'))
-vocab = joblib.load(Path.joinpath(artifacts_path,'vocab.pkl'))
-df2 = pd.read_csv(Path.joinpath(datasets_path,'responses.csv'))
+model = load_model(path.joinpath(ARTIFACTS_PATH,'model-v1.h5'))
+tokenizer_t = joblib.load(path.joinpath(ARTIFACTS_PATH,'tokenizer_t.pkl'))
+vocab = joblib.load(path.joinpath(ARTIFACTS_PATH,'vocab.pkl'))
+df2 = pd.read_csv(path.joinpath(DATASETS_PATH,'responses.csv'))
 
 # Monika functions
 def get_pred(model,encoded_input):
