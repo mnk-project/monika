@@ -1,0 +1,124 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: who_is_monika
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - who are u?
+    - I dont know u?
+    - I dont know you?
+
+- intent: birthday
+  examples: |
+    - tell me your birthday
+    - when you were born
+    - what a day you were born
+    - you were born what day
+    - Tell me what day you were born
+    - I was born on January 29
+    - I was born this year
+
+- intent: birthday
+  examples: |
+    - tell me your birthday
+    - when you were born
+    - what a day you were born
+    - you were born what day
+    - Tell me what day you were born
+    - I was born on January 29
+    - I was born this year  
+
+- intent: creators
+  examples: |
+    - who created you
+    - who gave birth to you
+    - who are your parents
+    - who is your father
+    - who is your mother
+    - who made you

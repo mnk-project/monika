@@ -1,3 +1,5 @@
+version: "2.0"
+
 intents:
   - greet
   - goodbye
@@ -5,11 +7,13 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
-  - bot_challenge
+  - who_is_monika
+  - birthday
+  - creators
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi!! I'm monika, how are you?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -24,8 +28,14 @@ responses:
   utter_goodbye:
   - text: "Bye"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_iammonika:
+  - text: "I am a girl called Monika."
+
+  utter_birthday:
+  - text: "I was born on October 5, 2020."
+
+  utter_creators:
+  - text: "I was developed by the heteroaffective relationship of my parents Gabriel Kunz and Lincoln Schreiber."
 
 session_config:
   session_expiration_time: 60
