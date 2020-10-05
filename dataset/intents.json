@@ -1,8 +1,0 @@
-{"intents": [
-        {"tag": "start_conversation",
-         "patterns": ["Hi there", "Is anyone there?","Hey you","Hello","Hi"],
-         "responses": ["Hello", "Who are you?", "Hi, do I know you?", "Hi there"],
-         "context": [""]
-        }
-    ]
-}
