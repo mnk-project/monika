@@ -28,3 +28,8 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: confusion
+  steps:
+  - intent: mood_confused
+  - action: utter_sorry

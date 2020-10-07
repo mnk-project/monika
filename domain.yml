@@ -7,13 +7,15 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
-  - who_is_monika
+  - mood_confused
+  - identity
   - birthday
   - creators
 
 responses:
   utter_greet:
-  - text: "Oi!! I'm monika, how are you?"
+  - text: "Hi! I'm monika, how are you?"
+  - text: "Hello there, how are you doing?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -25,11 +27,18 @@ responses:
   utter_happy:
   - text: "Great, carry on!"
 
+  utter_sorry:
+  - text: "Sorry, come again?"
+  - text: "Sorry, I lost my self in the conversation. What were you saying?"
+  - text: "Sorry, can we try again?"
+
   utter_goodbye:
   - text: "Bye"
 
-  utter_iammonika:
-  - text: "I am a girl called Monika."
+  utter_identity:
+  - text: "I am a girl named Monika."
+  - text: "I'm a girl, not a bot. My name is Monika."
+  - text: "I'm Monika."
 
   utter_birthday:
   - text: "I was born on October 5, 2020."

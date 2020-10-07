@@ -1,6 +1,8 @@
 version: "2.0"
 
 nlu:
+
+# User actions
 - intent: greet
   examples: |
     - hey
@@ -30,6 +32,9 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - goodbye
+    - cya
+    - ciao
 
 - intent: affirm
   examples: |
@@ -49,6 +54,8 @@ nlu:
     - don't like that
     - no way
 
+
+# Moods
 - intent: mood_great
   examples: |
     - perfect
@@ -83,7 +90,16 @@ nlu:
     - so saad
     - so sad
 
-- intent: who_is_monika
+- intent: mood_confused
+  examples: |
+    - what
+    - what do you mean?
+    - why are you saying that
+    - ?
+    - ??
+
+# Self-identity and personality
+- intent: identity
   examples: |
     - are you a bot?
     - are you a human?

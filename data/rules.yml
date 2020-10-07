@@ -7,10 +7,10 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am Monik' anytime the user ask
+- rule: Say 'I am Monika' anytime the user ask
   steps:
-  - intent: who_is_monika
-  - action: utter_iammonika
+  - intent: identity
+  - action: utter_identity
 
 - rule: Say her birthday anytime the user ask
   steps:
