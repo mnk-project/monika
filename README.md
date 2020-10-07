@@ -1,13 +1,8 @@
 # Monika
 
 Currently running on Rasa shell:
+
 ![](https://i.imgur.com/00A3pKw.png)
-
-
-## Requirements
-- Python 3.8
--
-- Rasa 2.0.0rc4
 
 ## Usage
 
