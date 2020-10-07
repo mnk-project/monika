@@ -25,3 +25,26 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+
+""" from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+ """
+
+# Identity actions
+""" class ActionAge(Action):
+    
+    current_date = 
+    birthday_date = 
+
+    def name(self) -> Text:
+        return "action_age"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            
+            
+            
+            
+            )
+        return [] """
