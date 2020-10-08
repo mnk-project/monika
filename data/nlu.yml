@@ -120,15 +120,10 @@ nlu:
     - I was born on January 29
     - I was born this year
 
-- intent: birthday
+- intent: age
   examples: |
-    - tell me your birthday
-    - when you were born
-    - what a day you were born
-    - you were born what day
-    - Tell me what day you were born
-    - I was born on January 29
-    - I was born this year  
+    - how old are you?
+    - how many years do you have?
 
 - intent: creators
   examples: |

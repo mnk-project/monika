@@ -26,25 +26,38 @@
 #
 #         return []
 
-""" from rasa_sdk import Action, Tracker
+from datetime import date
+from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
- """
+from typing import Any, Text, Dict, List
 
 # Identity actions
-""" class ActionAge(Action):
+class ActionAge(Action):
     
-    current_date = 
-    birthday_date = 
+    current_date = date.today()
 
     def name(self) -> Text:
         return "action_age"
 
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-            
-            
-            
-            
-            )
-        return [] """
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        age_unit = "years"
+        age = 2020 - self.current_date.year
+
+        if age == -1: # 1 year old
+            age_unit = "year"
+        elif age == 0: # Months old
+            age_unit = "months"
+            age = 10 - self.current_date.month
+            if age == -1: # 1 month old
+                age_unit = "month"
+            elif age == 0: # Days old
+                age_unit = "days"
+                age = 5 - self.current_date.day
+        
+        age = age * -1
+
+        response = "I'm {} {} old.".format(age, age_unit)
+        dispatcher.utter_message(response)
+
+        return []

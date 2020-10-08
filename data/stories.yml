@@ -33,3 +33,8 @@ stories:
   steps:
   - intent: mood_confused
   - action: utter_sorry
+
+- story: age
+  steps:
+  - intent: age
+  - action: action_age
